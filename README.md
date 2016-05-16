@@ -10,22 +10,23 @@
     phil@theironyard.com (Ok contact method)
     (801) 361-7960 (text if you have to, call with emergencies)
 
-
-Hello everyone! I'm excited to get started with class and I hope you are too. Over the next 12 weeks we will cover Objective-C, Swift, the iOS SDK, and a bunch of other concepts too numerous to name. We will also tackle problems and challenges that software engineers face everyday around the world. This is all to get you to begin to think like an engineer. It will be difficult, but I hope also a lot of fun. By the end of this course you all should be able to build iOS applications for both yourself and your future clients/employers. 
-
+<br>
+**I'm excited to get started with class and I hope you are too! **<br>
+<br>
+Over the next 12 weeks we will cover Objective-C, Swift, the iOS SDK. You will learn to think like an engineer, work together as a team and use industry leading tools to create Apps.
+<br><br>
 I encourage you all to push towards **releasing at least one app in the App Store**. There really is nothing more satisfying than having an app that is publicly available and something you can point to as an execution of your vision and hard work.
+<br>
 
-#Slack - TIY-SaltLakeCity
-
+###Slack - TIY-SaltLakeCity
 If you haven't been invited to our Slack channel let me know.
-
-[The Iron Yard Slack Group](https://tiy-saltlakecity.slack.com/messages/slc_may2016_mobile/)
+[The Iron Yard Slack Group](https://tiystudents.slack.com/archives/slc_may2016_mobile)
 
 ## Github
 
 First, you need to [sign up for a free Github account](http://github.com/signup), find [the class project](https://github.com/TIY-Mobile-May-2016/TIY-Course) and "star" it ([more on "starring" and notifications](https://help.github.com/articles/about-stars)). 
 
-Once you do, I'll invite you to [a group for our class](https://github.com/orgs/TIY-Mobile-May-2016/teams/2016-winter-ios), so watch for an email from Github!
+Once you do, I'll invite you to [a group for our class](https://github.com/orgs/TIY-Mobile-May-2016), so watch for an email from Github!
 
 Next, get acquainted by poking around a bit, paying special attention to [the class wiki](https://github.com/TIY-Mobile-May-2016/TIY-Course/wiki). 
 
@@ -48,5 +49,3 @@ You're about to take the first step of many on the road to becoming a full fledg
 
     * [ ] Have Github username
     * [ ] Looked at github repository TIY-Course/00- Developers Awaken
- 
- 
