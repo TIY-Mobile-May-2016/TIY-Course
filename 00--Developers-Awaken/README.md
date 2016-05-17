@@ -47,6 +47,10 @@ You will be living in [Xcode 7](https://itunes.apple.com/us/app/xcode/id49779983
 * A valid public email address, so I can contact you if I need to.
 * [Complete the "Hello World" Github guide](https://guides.github.com/activities/hello-world/)
 
+## Homework
+
+- Finish the CounterApp-starter. For a working example see [Video](http://quick.as/j5agsxglg)
+
 ## Optional Activities
 
 * Watch _The Long Run_ Videos on [Delve.tv](http://delve.tv)
