@@ -17,20 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CURRENT COUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcb-eS-LBR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT COUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcb-eS-LBR">
                                 <rect key="frame" x="249" y="28" width="102" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="phs-iC-BnY">
-                                <rect key="frame" x="14" y="224" width="572" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="phs-iC-BnY">
+                                <rect key="frame" x="298" y="224" width="4" height="31"/>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2VL-fk-KoT">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2VL-fk-KoT">
                                 <rect key="frame" x="253" y="262" width="94" height="29"/>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-xd-vzi">
-                                <rect key="frame" x="253" y="88" width="98" height="103"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-xd-vzi">
+                                <rect key="frame" x="251" y="88" width="98" height="103"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="88"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,11 +39,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="HLU-xd-vzi" firstAttribute="centerX" secondItem="lOa-Gc-2Yq" secondAttribute="centerX" id="YMk-r4-fb8"/>
-                            <constraint firstItem="HLU-xd-vzi" firstAttribute="top" secondItem="Vcb-eS-LBR" secondAttribute="bottom" constant="36" id="dHo-Za-YfX"/>
+                            <constraint firstItem="2VL-fk-KoT" firstAttribute="top" secondItem="phs-iC-BnY" secondAttribute="bottom" constant="8" id="AfA-vp-78n"/>
+                            <constraint firstItem="phs-iC-BnY" firstAttribute="centerX" secondItem="lOa-Gc-2Yq" secondAttribute="centerX" id="DTc-3i-mrR"/>
+                            <constraint firstItem="2VL-fk-KoT" firstAttribute="centerX" secondItem="lOa-Gc-2Yq" secondAttribute="centerX" id="Haf-Ce-hOX"/>
+                            <constraint firstItem="HLU-xd-vzi" firstAttribute="top" secondItem="Vcb-eS-LBR" secondAttribute="bottom" constant="36" id="Ibh-TG-SQ4"/>
+                            <constraint firstItem="Vcb-eS-LBR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PxJ-Ou-PFN"/>
+                            <constraint firstItem="phs-iC-BnY" firstAttribute="top" secondItem="HLU-xd-vzi" secondAttribute="bottom" constant="33" id="fG9-gX-wLp"/>
+                            <constraint firstItem="HLU-xd-vzi" firstAttribute="centerX" secondItem="lOa-Gc-2Yq" secondAttribute="centerX" id="k6S-Ya-OM1"/>
+                            <constraint firstItem="Vcb-eS-LBR" firstAttribute="centerX" secondItem="lOa-Gc-2Yq" secondAttribute="centerX" id="u18-wg-SkD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="counterLabel" destination="HLU-xd-vzi" id="9Qv-4v-L4P"/>
                         <outlet property="slider" destination="phs-iC-BnY" id="c0I-rg-feg"/>
                         <outlet property="stepper" destination="2VL-fk-KoT" id="z7Z-Nx-WUG"/>
                     </connections>
