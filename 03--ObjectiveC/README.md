@@ -1,6 +1,9 @@
-# 03 -- 
+# 03 -- Objective-C
 
 ## Agenda
+
+### Instructor Commitments
+
 
 ### Daily Rituals
 
@@ -8,6 +11,7 @@
 * Homework Review
 
 ### Topics
-* More Objective-C
-* 
-* 
+* Objective-C Arrays, Dictionaries
+* More on Conditionals, Flowcharts
+* Object Oriented Programming
+
