@@ -51,21 +51,8 @@ After completing this assignment, you should…
 * [ ] Create a variable property to store the current speed and set it to 0.
 * [ ] Set the speed label to "% MPH", with % being the current speed.
 * [ ] Set the lastTimeDeparted label.
-* [ ] Set the TimeCircuitsViewController class as implementing the delegate for the date picker.
-* [ ] Set the DatePickerViewController object's delegate as the TimeCircuitsViewController object in the prepareForSegue method.
-* [ ] Call the delegate method to inform the delegate of the new date chosen by the user somewhere in the DatePickerViewController.
-* [ ] Set the destinationTimeLabel with the date received from the picker view controller using the date formatter object in the destinationDateWasChosen method.
-* [ ] Call the method to start the timer in the IBAction that is called when the travel back button is tapped.
-* [ ] In the start timer method, instantiate the timer object for a 0.1 sec time interval. Set it to fire the method that updates the speed label.
-* [ ] In the stop timer method, stop the timer (there is a method you can call to do this, and it may not be called _stop_) and then set it to nil.
-* In the update speed method:
-	* [ ] Check if the current speed variable has reached 88. If we have NOT:
-		* [ ] Increment the current speed variable by 1.
-		* [ ] Update the speed label with the current speed.
-	* [ ] Once the speed has reached at least 88, stop the timer.
-		* [ ] Update the value of the lastTimeDepartedLabel with the value from the presentTimeLabel.
-		* [ ] Update the value of the presentTimeLabel with the value from the destinationTimeLabel.
-		* [ ] Reset the value of the current speed variable to 0.
+* 
+
 ```
 
 
