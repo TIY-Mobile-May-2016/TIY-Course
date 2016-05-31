@@ -10,7 +10,7 @@
 
 @interface StarWarsCharacter : NSObject
 
-+(instancetype)initWithName:(NSString *)name spaceShip:(NSString *)spaceship;
+-(instancetype)initWithName:(NSString *)name spaceShip:(NSString *)spaceship;
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *spaceship;

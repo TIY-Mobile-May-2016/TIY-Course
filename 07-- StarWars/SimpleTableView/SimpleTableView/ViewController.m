@@ -24,7 +24,7 @@
     
     self.charactersArray = [[NSMutableArray alloc] init];
     
-    StarWarsCharacter *luke = [StarWarsCharacter initWithName:@"Luke Skyewalker" spaceShip:@"X-Wing"];
+    StarWarsCharacter *luke = [[StarWarsCharacter alloc] initWithName:@"Luke Skyewalker" spaceShip:@"X-Wing"];
     [self.charactersArray addObject:luke];
     
     StarWarsCharacter *leia = [[StarWarsCharacter alloc] init];

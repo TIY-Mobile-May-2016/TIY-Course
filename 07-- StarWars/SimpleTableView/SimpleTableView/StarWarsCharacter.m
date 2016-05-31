@@ -10,13 +10,13 @@
 
 @implementation StarWarsCharacter
 
-+(instancetype)initWithName:(NSString *)n spaceShip:(NSString *)s {
+-(instancetype)initWithName:(NSString *)n spaceShip:(NSString *)s {
     
-    StarWarsCharacter *theCharacter = [[StarWarsCharacter alloc] init];
-    theCharacter.name = n;
-    theCharacter.spaceship = s;
-    
-    return theCharacter;
+    if ( self = [super init] ) {
+        self.name = n;
+        self.spaceship = s;
+    }
+    return self;
 }
 
 @end
