@@ -14,6 +14,7 @@
 		5E8FDE771CFDFF1A0024922C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FDE761CFDFF1A0024922C /* Assets.xcassets */; };
 		5E8FDE7A1CFDFF1A0024922C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FDE781CFDFF1A0024922C /* LaunchScreen.storyboard */; };
 		5E8FDE831CFE0B1B0024922C /* StarWarsCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDE821CFE0B1B0024922C /* StarWarsCharacter.m */; };
+		5ED6BB2C1CFE418000F7B8D0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6BB2B1CFE418000F7B8D0 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5E8FDE7B1CFDFF1A0024922C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8FDE811CFE0B1B0024922C /* StarWarsCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarWarsCharacter.h; sourceTree = "<group>"; };
 		5E8FDE821CFE0B1B0024922C /* StarWarsCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarWarsCharacter.m; sourceTree = "<group>"; };
+		5ED6BB2A1CFE418000F7B8D0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		5ED6BB2B1CFE418000F7B8D0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				5E8FDE6E1CFDFF1A0024922C /* AppDelegate.m */,
 				5E8FDE701CFDFF1A0024922C /* ViewController.h */,
 				5E8FDE711CFDFF1A0024922C /* ViewController.m */,
+				5ED6BB2A1CFE418000F7B8D0 /* ProfileViewController.h */,
+				5ED6BB2B1CFE418000F7B8D0 /* ProfileViewController.m */,
 				5E8FDE811CFE0B1B0024922C /* StarWarsCharacter.h */,
 				5E8FDE821CFE0B1B0024922C /* StarWarsCharacter.m */,
 				5E8FDE731CFDFF1A0024922C /* Main.storyboard */,
@@ -158,6 +163,7 @@
 				5E8FDE6F1CFDFF1A0024922C /* AppDelegate.m in Sources */,
 				5E8FDE831CFE0B1B0024922C /* StarWarsCharacter.m in Sources */,
 				5E8FDE6C1CFDFF1A0024922C /* main.m in Sources */,
+				5ED6BB2C1CFE418000F7B8D0 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +312,7 @@
 				5E8FDE801CFDFF1A0024922C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

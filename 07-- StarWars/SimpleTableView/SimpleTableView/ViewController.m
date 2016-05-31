@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "StarWarsCharacter.h"
+#import "ProfileViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *charactersArray;
+@property (strong, nonatomic) StarWarsCharacter *currentCharacter;
 
 @end
 
@@ -61,9 +63,9 @@
     // UILabel called textLabel that displays in the TableViewCell
     
     // Temporary pointer to one character in the array
-    StarWarsCharacter *theCharacter = [self.charactersArray objectAtIndex:indexPath.row];
+    self.currentCharacter = [self.charactersArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = theCharacter.name;
+    cell.textLabel.text = self.currentCharacter.name;
     
     // returns the actual tableViewCell
     return cell;
@@ -73,6 +75,26 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"I clicked on row %ld", indexPath.row);
     
+    self.currentCharacter = [self.charactersArray objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"ProfileSegue" sender:nil];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"ProfileSegue"]) {
+        
+//        NSLog(@"prepare for Segue called with identifier == %@", segue.identifier);
+        
+        
+        // This gives you a pointer to the upcoming destination View Controller
+        
+        ProfileViewController *profileController = (ProfileViewController *)segue.destinationViewController;
+
+        profileController.theCharacter = self.currentCharacter;
+        
+    }
 }
 
 
