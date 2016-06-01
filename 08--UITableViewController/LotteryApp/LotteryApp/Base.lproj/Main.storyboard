@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G7a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SlD-Wr-jWt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Ticket Table View Controller-->
+        <scene sceneID="aos-1A-l7V">
+            <objects>
+                <tableViewController id="P7Q-je-kL4" customClass="TicketTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PAF-SE-0O7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" id="8h1-aT-HbI">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8h1-aT-HbI" id="GdM-lk-xuu">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P7Q-je-kL4" id="7NL-qF-krc"/>
+                            <outlet property="delegate" destination="P7Q-je-kL4" id="JB3-0V-VPc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="H2h-pb-BI6">
+                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="vwG-cV-dk4">
+                            <connections>
+                                <action selector="checkTicketTapped:" destination="P7Q-je-kL4" id="MG1-xC-Slo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="5ig-kJ-pIO">
+                            <connections>
+                                <action selector="addTicket:" destination="P7Q-je-kL4" id="BHB-Z1-379"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="a3t-9c-0Wc" kind="presentation" identifier="PickerSegue" id="cGW-25-9lr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ot6-ax-olx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="178"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="wVg-1q-SGF">
+            <objects>
+                <viewController id="a3t-9c-0Wc" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mFE-Sv-DzC"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfk-Db-a4R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b27-RL-Fsf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75x-d8-exF">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="75x-d8-exF" firstAttribute="centerX" secondItem="b27-RL-Fsf" secondAttribute="centerX" id="c9K-75-v0f"/>
+                            <constraint firstItem="75x-d8-exF" firstAttribute="centerY" secondItem="b27-RL-Fsf" secondAttribute="centerY" id="yMF-tU-kUx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="75x-d8-exF" id="NQN-QZ-8h3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKx-ZO-7qi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2411" y="199"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tx9-SM-pId">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SlD-Wr-jWt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VBt-tK-Nm1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P7Q-je-kL4" kind="relationship" relationship="rootViewController" id="S8x-wK-EIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePI-S9-GBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="178"/>
+        </scene>
+    </scenes>
+</document>
