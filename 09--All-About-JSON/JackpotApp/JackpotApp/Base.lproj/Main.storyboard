@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G7a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iPa-q6-fqJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6cg-u0-xYn">
+                        <barButtonItem key="leftBarButtonItem" title="Check Status" id="FAT-Jr-ZVH">
+                            <connections>
+                                <action selector="checkStatusTapped:" destination="BYZ-38-t0r" id="Wvm-WX-fLc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hbe-ak-x7a">
+                            <connections>
+                                <action selector="addTicket:" destination="BYZ-38-t0r" id="noi-D4-c3S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="bzy-yW-xLa" kind="show" identifier="PickerSegue" id="gbZ-3c-FW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="-348"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="p1q-GM-m0X">
+            <objects>
+                <viewController id="bzy-yW-xLa" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91C-c6-Hrt"/>
+                        <viewControllerLayoutGuide type="bottom" id="VdQ-hu-hqe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GP6-wP-IDa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-gA-uD5">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bzy-yW-xLa" id="sw3-iR-LKU"/>
+                                    <outlet property="delegate" destination="bzy-yW-xLa" id="Pyh-HY-heJ"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BrK-gA-uD5" firstAttribute="centerX" secondItem="GP6-wP-IDa" secondAttribute="centerX" id="1CT-nK-8cU"/>
+                            <constraint firstItem="BrK-gA-uD5" firstAttribute="centerY" secondItem="GP6-wP-IDa" secondAttribute="centerY" id="Fmg-ac-1mB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="BrK-gA-uD5" id="iNa-eY-OTy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBq-2p-irb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789" y="-348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LQO-zQ-AeZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iPa-q6-fqJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yxa-pP-vhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lgc-GA-gEa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9d-pH-nYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-448"/>
+        </scene>
+    </scenes>
+</document>
