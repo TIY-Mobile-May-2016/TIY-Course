@@ -6,14 +6,15 @@
 
 ### Daily Rituals
 
-* Standup Meeting & Homework Review
+* Homework Review
+* JSON
+* Loading an image from a url
 * One on One Weekly Assignments
 
+### Weekend Assignment - At the Movies!
 
 ### Topics
 
 	* JSON (Javascript Object Notation)
 	* Parsing JSON
 	* Loading JSON from a text file
-
-http://image.tmdb.org/t/p/w500/
