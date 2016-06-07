@@ -1,0 +1,435 @@
+{
+	"artists": {
+		"href": "https://api.spotify.com/v1/search?query=wham&offset=0&limit=20&type=artist",
+		"items": [{
+			"external_urls": { "spotify": "https://open.spotify.com/artist/5lpH0xAS4fVfLkACg9DAuM" },
+			"followers": { "href": null,"total": 107950 },
+			"genres": ["new wave pop"],
+			"href": "https://api.spotify.com/v1/artists/5lpH0xAS4fVfLkACg9DAuM",
+			"id": "5lpH0xAS4fVfLkACg9DAuM",
+			"images": [{ "height": 872, "url": "https://i.scdn.co/image/300d845955ce68f61fa5156cec232feeee2e49fc", "width": 1000
+			}, {
+				"height": 558,
+				"url": "https://i.scdn.co/image/cfb0b13fb0cddbca799d2d09ff78ba5e5d7d5aa4",
+				"width": 640
+			}, {
+				"height": 174,
+				"url": "https://i.scdn.co/image/e26ea765886bbf49615c6fdbfb535bfe57740c4b",
+				"width": 200
+			}, {
+				"height": 56,
+				"url": "https://i.scdn.co/image/be0277dda220ed9edd151bd9ad4c727fdec17850",
+				"width": 64
+			}],
+			"name": "Wham!",
+			"popularity": 60,
+			"type": "artist",
+			"uri": "spotify:artist:5lpH0xAS4fVfLkACg9DAuM"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/4H9IY4sV7AA1aIbFIaUDNb"
+			},
+			"followers": {
+				"href": null,
+				"total": 1
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/4H9IY4sV7AA1aIbFIaUDNb",
+			"id": "4H9IY4sV7AA1aIbFIaUDNb",
+			"images": [],
+			"name": "Whammy Boy",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:4H9IY4sV7AA1aIbFIaUDNb"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/0sentGHe8gTx3mcWwuifY7"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/0sentGHe8gTx3mcWwuifY7",
+			"id": "0sentGHe8gTx3mcWwuifY7",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/a46b46ef83c0a11cd11a9d3f10186ab9ade0fddc",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/702377877a3c4f8084e7a8c2a1b7e8a337a7f420",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/a82db80006b817c33a70891a61bf8feb7d62d7ce",
+				"width": 64
+			}],
+			"name": "The Surf Whammys",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:0sentGHe8gTx3mcWwuifY7"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/49Uv9AEmNBnpBLeHtjeSGA"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/49Uv9AEmNBnpBLeHtjeSGA",
+			"id": "49Uv9AEmNBnpBLeHtjeSGA",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/dbf4e5964157af28815c7ce47a6e03f6b92484b4",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/6ec6b07dfbad751ce614728d376672de955de861",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/4cf4134403b6169a644fd38adc418994da0f512b",
+				"width": 64
+			}],
+			"name": "Captain Whammy and the Beard",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:49Uv9AEmNBnpBLeHtjeSGA"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/6Luohx0uQjLEbSHqhvhk1w"
+			},
+			"followers": {
+				"href": null,
+				"total": 1
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/6Luohx0uQjLEbSHqhvhk1w",
+			"id": "6Luohx0uQjLEbSHqhvhk1w",
+			"images": [],
+			"name": "Whamphiry",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:6Luohx0uQjLEbSHqhvhk1w"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/725G2ih5OqQEl6YPy0dESK"
+			},
+			"followers": {
+				"href": null,
+				"total": 1
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/725G2ih5OqQEl6YPy0dESK",
+			"id": "725G2ih5OqQEl6YPy0dESK",
+			"images": [],
+			"name": "Whambi",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:725G2ih5OqQEl6YPy0dESK"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/51KslRYMhSmnITF7VEgJZX"
+			},
+			"followers": {
+				"href": null,
+				"total": 122
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/51KslRYMhSmnITF7VEgJZX",
+			"id": "51KslRYMhSmnITF7VEgJZX",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/ca21982257d02c9a0bc2078ab05b9e080d00c576",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/0a1b06511d0a189cb36581d6e4e2eac21cf7f0b5",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/cc2063f027421702f64fa666ba402d4072e80c79",
+				"width": 64
+			}],
+			"name": "Wham Bam Bodyslam",
+			"popularity": 4,
+			"type": "artist",
+			"uri": "spotify:artist:51KslRYMhSmnITF7VEgJZX"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/3wszNJP8XLeuHBI2pNo1FG"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/3wszNJP8XLeuHBI2pNo1FG",
+			"id": "3wszNJP8XLeuHBI2pNo1FG",
+			"images": [],
+			"name": "Wham Bam Glam",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:3wszNJP8XLeuHBI2pNo1FG"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5KdWT6QO4FGYkwx1rCZxvv"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/5KdWT6QO4FGYkwx1rCZxvv",
+			"id": "5KdWT6QO4FGYkwx1rCZxvv",
+			"images": [],
+			"name": "Googie Rene & His Wham Bams",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:5KdWT6QO4FGYkwx1rCZxvv"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5sFZqamsGGIruJDHPLq36r"
+			},
+			"followers": {
+				"href": null,
+				"total": 6
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/5sFZqamsGGIruJDHPLq36r",
+			"id": "5sFZqamsGGIruJDHPLq36r",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/086e887b56ec8491f6f5963655ffa6fbaad0afb5",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/dc0b786e5198ade4bf0c0110731a2313a2d25715",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/df4a49862fceaf9d18c00e739dda22f67e65a5a4",
+				"width": 64
+			}],
+			"name": "Fiddle Whamdiddle",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:5sFZqamsGGIruJDHPLq36r"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5swpx3EbirLAiYMpUz1m2V"
+			},
+			"followers": {
+				"href": null,
+				"total": 5
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/5swpx3EbirLAiYMpUz1m2V",
+			"id": "5swpx3EbirLAiYMpUz1m2V",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/f17d058b4e4d53ca59a366321593a0adc60d02aa",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/7eb5b6428fedc14c8f2dd01bf914a64f20c8e704",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/9258ad6aa224cb17fc5d32f224fe41e460d46d96",
+				"width": 64
+			}],
+			"name": "Wham Bam",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:5swpx3EbirLAiYMpUz1m2V"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/3qfKnkLko5g6GWHZrvSXdZ"
+			},
+			"followers": {
+				"href": null,
+				"total": 2
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/3qfKnkLko5g6GWHZrvSXdZ",
+			"id": "3qfKnkLko5g6GWHZrvSXdZ",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/6a82efb4ff9efb8cc65621a36d293f134d1d4036",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/c99ccbf1b08b0e5b55ac42375bc47c87401c9ab2",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/5054b0c5331b17be23ffe62354009c57afb5924b",
+				"width": 64
+			}],
+			"name": "Jr. Whammy and the Shakin' D.T.'s",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:3qfKnkLko5g6GWHZrvSXdZ"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/4F1rDZrDEpKqjKtaKRRtFl"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/4F1rDZrDEpKqjKtaKRRtFl",
+			"id": "4F1rDZrDEpKqjKtaKRRtFl",
+			"images": [],
+			"name": "Craig O Wham",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:4F1rDZrDEpKqjKtaKRRtFl"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/2Vtpz6YTJDVVCk89nhuSEE"
+			},
+			"followers": {
+				"href": null,
+				"total": 82
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/2Vtpz6YTJDVVCk89nhuSEE",
+			"id": "2Vtpz6YTJDVVCk89nhuSEE",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/e2901c6e903445abc3cc3c6016eac42198b2c65e",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/4e0e3692c477977fc972c4b6fabce5bda999ed86",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/4854278a6eaed8a3918e237151624043c22d76bd",
+				"width": 64
+			}],
+			"name": "The Whig Whams",
+			"popularity": 2,
+			"type": "artist",
+			"uri": "spotify:artist:2Vtpz6YTJDVVCk89nhuSEE"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5DVM2RDTkDY2C7W1dSOmAm"
+			},
+			"followers": {
+				"href": null,
+				"total": 4
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/5DVM2RDTkDY2C7W1dSOmAm",
+			"id": "5DVM2RDTkDY2C7W1dSOmAm",
+			"images": [],
+			"name": "Whammy",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:5DVM2RDTkDY2C7W1dSOmAm"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/10a37yhz41tZdQLZLy6J2M"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/10a37yhz41tZdQLZLy6J2M",
+			"id": "10a37yhz41tZdQLZLy6J2M",
+			"images": [],
+			"name": "Whamtan",
+			"popularity": 1,
+			"type": "artist",
+			"uri": "spotify:artist:10a37yhz41tZdQLZLy6J2M"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/6AJ0FZWSz1qDyu8XHWqECC"
+			},
+			"followers": {
+				"href": null,
+				"total": 6
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/6AJ0FZWSz1qDyu8XHWqECC",
+			"id": "6AJ0FZWSz1qDyu8XHWqECC",
+			"images": [{
+				"height": 640,
+				"url": "https://i.scdn.co/image/12a2b7b893d1656f64fb65a2818efd0560d946a5",
+				"width": 640
+			}, {
+				"height": 300,
+				"url": "https://i.scdn.co/image/c3429c8d9502c6d2fe7d08e4ffeef12fa0374d40",
+				"width": 300
+			}, {
+				"height": 64,
+				"url": "https://i.scdn.co/image/1581be6c1726303b8751b9f784c18a8b03fbb3de",
+				"width": 64
+			}],
+			"name": "The Whammy Paradox",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:6AJ0FZWSz1qDyu8XHWqECC"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1VkRZxEFydwJ3QWVCsSC5P"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/1VkRZxEFydwJ3QWVCsSC5P",
+			"id": "1VkRZxEFydwJ3QWVCsSC5P",
+			"images": [],
+			"name": "Karnage Whamblama",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:1VkRZxEFydwJ3QWVCsSC5P"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1GcAnevVzkiaSrI1S9Bk6F"
+			},
+			"followers": {
+				"href": null,
+				"total": 0
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/1GcAnevVzkiaSrI1S9Bk6F",
+			"id": "1GcAnevVzkiaSrI1S9Bk6F",
+			"images": [],
+			"name": "Whambizzi",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:1GcAnevVzkiaSrI1S9Bk6F"
+		}, {
+			"external_urls": {
+				"spotify": "https://open.spotify.com/artist/5oGkChf7H8WNDqFMko1wnB"
+			},
+			"followers": {
+				"href": null,
+				"total": 1
+			},
+			"genres": [],
+			"href": "https://api.spotify.com/v1/artists/5oGkChf7H8WNDqFMko1wnB",
+			"id": "5oGkChf7H8WNDqFMko1wnB",
+			"images": [],
+			"name": "Judith Wham",
+			"popularity": 0,
+			"type": "artist",
+			"uri": "spotify:artist:5oGkChf7H8WNDqFMko1wnB"
+		}],
+		"limit": 20,
+		"next": null,
+		"offset": 0,
+		"previous": null,
+		"total": 20
+	}
+}
