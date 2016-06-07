@@ -26,6 +26,8 @@
         
         // get the images array
         
+        NSArray *imagesArray = [dict valueForKey:@"images"];
+        
     }
     return self;
 }
