@@ -12,71 +12,113 @@ import XCPlayground
 // 1. create your typealias (this will make it easier for you!)
 
 typealias JSONDictionary = [String:AnyObject]
-typealias JSONArray = [AnyObject]
+typealias JSONArray = [JSONDictionary]
 
-
-// 2. Create your Movie Class
+// Create a Movie Object
 
 class Movie {
-    var title: NSString = ""
-    var posterPath: NSString = ""
+    
+    var title: String = ""
+    var posterPath: String = ""
+    
+    init() {
+        self.title = ""
+        self.posterPath = ""
+    }
+    
+    init(title: String, posterPath: String) {
+        self.title = title
+        self.posterPath = posterPath
+    }
+    
+    init(jsonDictionary: JSONDictionary) {
+        
+        if let posterPath = jsonDictionary["poster_path"] as? String {
+            //print(posterPath)
+            
+            self.posterPath = "http://image.tmdb.org/t/p/w500\(posterPath)"
+            
+        } else {
+            print("I couldnt parse the PosterPath")
+        }
+        
+        if let title = jsonDictionary["original_title"] as? String {
+            //print(title)
+            
+            self.title = title
+            
+        } else {
+            print("I couldnt parse the title")
+        }
+        
+    }
 }
 
-// 3. Create an empty array for your movies
+// Create an Array of Movies
 
 var moviesArray = [Movie]()
 
 
-// Step 2 Load file popular.json
+// 2 load the json file into an nsurl
 
 if let filePath = NSBundle.mainBundle().URLForResource("popular", withExtension: "json") {
 
-    // Step 3 Convert the contents to NSData
-
+    // 2. Create the NSURL to NSData
+    
     if let data = NSData(contentsOfURL: filePath) {
         
-            // Step 4 Use the do / try / catch to parse the json
-            do {
-                if let jsonDict = try
-                    NSJSONSerialization.JSONObjectWithData(data, options: []) as?
-                JSONDictionary {
+        do {
+            
+            // LEVEL 1
+            if let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
+                
+                // LEVEL 2
+                if let resultsArray = jsonDict["results"] as? JSONArray {
                     
-                    // Parse the JSONDict
-                    
-                    print(jsonDict)
-                    
-                    if let resultsArray = jsonDict["results"] as? JSONArray {
+                    // Level 2
+                    for resultsDict in resultsArray {
                         
-                        for dict in resultsArray {
-                            
-                            // Step 1 Create Movie object
-                            
-                            let theMovie = Movie()
-                            
-                            if let title = dict["original_title"] as? String {
-                                theMovie.title = title
-                            } else {
-                                print("Could not parse title string")
-                            }
-                            
-                            if let posterPath = dict["poster_path"] as? String {
-                                theMovie.posterPath = posterPath
-                            } else {
-                                print("Could not parse the poster path")
-                            }
-                            
-                            moviesArray.append(theMovie)
-                        }
+                        var theMovie = Movie(jsonDictionary: resultsDict)
+                        moviesArray.append(theMovie)
                     }
+                    
+                    
+                    
+                } else {
+                    print("I cant parse the results")
                 }
-            } catch {
-                print("Something went wrong parsing the data")
+                
+            } else {
+                
+                print("I cant parse the dictionary")
+                
             }
+            
+        } catch {
+            print("I could not parse the json data")
+        }
+        
+        
+        
     }
     
-    for theMovie in moviesArray {
-        print(theMovie.title)
-    }
+    
+
+} else {
+    
+    print("I could not the file.")
+    
+}
+
+
+print(moviesArray.count)
+
+
+for theMovie in moviesArray {
+    
+    print(theMovie.title)
+    
+    
 }
 
 
