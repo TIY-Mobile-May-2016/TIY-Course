@@ -5,15 +5,20 @@
 
 import UIKit
 
-let strDate = "2015-11-01T00:00:00Z" // "2015-10-06T15:42:34Z"
 
 let dateFormatter = NSDateFormatter()
+dateFormatter.dateFormat = "yyyy-MM-dd"
 
-dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+let today = NSDate()
 
-let date: NSDate? = dateFormatter.dateFromString(strDate)
+dateFormatter.dateFormat = "MMM d, yyyy"
 
-print(date)
+
+print(dateFormatter.stringFromDate(today))
+
+
+
+print(today)
 
 
 
