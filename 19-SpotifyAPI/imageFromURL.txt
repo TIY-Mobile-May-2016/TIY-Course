@@ -1,0 +1,26 @@
+func loadImageFromURL(urlString: String) {
+
+        if let url = NSURL(string: urlString) {
+            let session = NSURLSession.sharedSession()
+            let task = session.dataTaskWithURL(url, completionHandler: {
+                (data, response, error) in
+
+                if error != nil {
+                    print("An error occurred \(error)")
+                    return
+                }
+
+                if let data = data {
+                    let theFinalImage = UIImage(data: data)
+                    dispatch_async(dispatch_get_main_queue(), {
+
+                        // use the final image here
+
+                    })
+                }
+            })
+            task.resume()
+        } else {
+            print("Not a valid url")
+        }
+}
