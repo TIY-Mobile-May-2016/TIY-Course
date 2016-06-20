@@ -1,0 +1,53 @@
+Parsing JSON from Web Services Code
+
+// 1. Attempt to create a valid NSURL from the string
+        if let url = NSURL(string: urlString) {
+
+            // 2. Create a Data Task for pulling the data from the URL
+
+            let task = session.dataTaskWithURL(url, completionHandler: {
+
+                (data, response, error) in
+
+                // 3. Check if there is an error
+
+                if error != nil {
+                    print(error?.localizedDescription)
+                    return
+                }
+
+                // 4. Parse the JSON
+
+                if let data = data {
+
+                    do {
+
+                        if let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
+
+
+                            print(jsonDictionary)
+
+
+
+                        } else {
+                            print("Could not parse jsonDictionary")
+                        }
+
+                    } catch {
+
+                    }
+
+
+                } else {
+                    print("Could not unwrap data")
+                }
+
+
+
+
+            })
+            task.resume()
+
+
+
+        }

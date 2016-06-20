@@ -1,0 +1,15 @@
+1. APP TRANSPORT in info.plist
+
+---
+
+Spotify API
+
+SEARCH DOCS
+https://developer.spotify.com/web-api/search-item/
+
+
+let artistID = "1IQ2e1buppatiN1bxUVkrk"
+let topTracksURLString = "https://api.spotify.com/v1/artists/\(artistID)/top-tracks?country=US"
+
+EXAMPLE
+https://api.spotify.com/v1/artists/1IQ2e1buppatiN1bxUVkrk/top-tracks?country=US
