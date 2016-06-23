@@ -1,18 +1,8 @@
-/*:
-## Geocoding - Completion Handlers
-*/
-
-import UIKit
-import CoreLocation
-import XCPlayground
-
-XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
-
 func geocoding(location: String, completion: (Double, Double) -> ()) {
     CLGeocoder().geocodeAddressString(location) {
-        
+
         (placemarks, error) in
-        
+
         if placemarks?.count > 0 {
             let placemark = placemarks?[0]
             let location = placemark!.location
@@ -21,21 +11,3 @@ func geocoding(location: String, completion: (Double, Double) -> ()) {
         }
     }
 }
-
-geocoding("84088") { (lat: Double, long: Double) in
-    
-    print(lat)
-    print(long)
-
-    
-}
-
-
-geocoding("84119") { (latitude: Double, longitude: Double) in
-    
-    print(latitude)
-    print(longitude)
-}
-
-
-
