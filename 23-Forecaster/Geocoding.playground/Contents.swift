@@ -8,6 +8,8 @@ import XCPlayground
 
 XCPlaygroundPage.currentPage.needsIndefiniteExecution = true
 
+
+
 func geocoding(location: String, completion: (Double, Double) -> ()) {
     CLGeocoder().geocodeAddressString(location) {
         
@@ -22,7 +24,9 @@ func geocoding(location: String, completion: (Double, Double) -> ()) {
     }
 }
 
-geocoding("84088") { (lat: Double, long: Double) in
+geocoding("84088") {
+    
+    (lat: Double, long: Double) in
     
     print(lat)
     print(long)

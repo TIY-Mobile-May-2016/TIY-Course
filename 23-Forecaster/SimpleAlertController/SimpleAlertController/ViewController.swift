@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
+    
+    var citiesArray = [City]()
     
     var cityName: String = ""
     var zipcode: String = ""
@@ -35,10 +38,27 @@ class ViewController: UIViewController {
                 self.zipcode = code
             }
             
-            print(firstTextField.text)
-            print(secondTextField.text)
-            
             // call geocode
+            self.geocoding(self.zipcode, completion: {
+                (latitude, longitude) in
+                
+                // we have city, zipcode and latitude and longie
+                
+                let city = City()
+                city.name = self.cityName
+                city.zipcode = self.zipcode
+                city.latitude = latitude
+                city.longitude = longitude
+                
+                // I have the City!
+                self.citiesArray.append(city)
+                
+                // reload tableview
+                
+            })
+            
+            
+            
             
         })
         
@@ -60,6 +80,20 @@ class ViewController: UIViewController {
     }
 
     // Func geocoding
+    
+    func geocoding(location: String, completion: (Double, Double) -> ()) {
+        CLGeocoder().geocodeAddressString(location) {
+            
+            (placemarks, error) in
+            
+            if placemarks?.count > 0 {
+                let placemark = placemarks?[0]
+                let location = placemark!.location
+                let coordinate = location?.coordinate
+                completion((coordinate?.latitude)!, (coordinate?.longitude)!)
+            }
+        }
+    }
     
 
 }

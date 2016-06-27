@@ -1,0 +1,3 @@
+"Business","Business Plans, Career Advice"
+"Advertising", "Hold Your Sign, Flyers and Handouts"
+"Lifestyle", "Animal Care & Pets, Relationship"
