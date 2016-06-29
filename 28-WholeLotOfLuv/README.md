@@ -1,4 +1,4 @@
-# 27 - Whole Lot of Luv
+# 28 - Whole Lot of Luv
 
 ### Daily Rituals
 

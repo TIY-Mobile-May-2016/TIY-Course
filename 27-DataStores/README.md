@@ -1,4 +1,4 @@
-# 26 - DataStores
+# 27 - DataStores
 
 ### Daily Rituals
 
