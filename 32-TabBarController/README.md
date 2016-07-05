@@ -41,4 +41,12 @@ print(index)
 ```
 
 
+## Homework Phase I
+
+Create three UISlider objects one for the red, green and blue.
+
+When the slider value changes save the corresponding (red,green or blue) value to the NSUserDefaults.
+
+When the viewDidLoad method of the ViewController is called, change the background color to the saved values.
+
 
