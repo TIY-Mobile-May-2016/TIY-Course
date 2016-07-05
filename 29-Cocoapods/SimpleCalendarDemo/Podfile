@@ -2,4 +2,3 @@ use_frameworks!
 target 'SimpleCalendarDemo' do
 pod "CalendarView"
 end
-
