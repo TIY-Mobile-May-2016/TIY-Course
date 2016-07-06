@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bf_1" translatesAutoresizingMaskIntoConstraints="NO" id="fnd-tz-aO2">
-                                <rect key="frame" x="87" y="96" width="100" height="51"/>
+                                <rect key="frame" x="120" y="97" width="100" height="51"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
