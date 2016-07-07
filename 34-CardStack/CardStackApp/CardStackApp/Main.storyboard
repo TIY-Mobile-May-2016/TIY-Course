@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R3v-jd-nBt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Cards View Controller-->
+        <scene sceneID="aLT-3W-cXz">
+            <objects>
+                <viewController id="R3v-jd-nBt" customClass="CardsViewController" customModule="CardStackApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13i-1s-CAw"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5O-vJ-pLl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uen-tM-R16">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHW-yH-o7o" customClass="CardStack" customModule="CardStackApp" customModuleProvider="target">
+                                <rect key="frame" x="61" y="150" width="480" height="300"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="452" id="5zK-zq-wko"/>
+                                    <constraint firstAttribute="width" constant="445" id="HeI-xL-Nsh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5zK-zq-wko"/>
+                                        <exclude reference="HeI-xL-Nsh"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DHW-yH-o7o" firstAttribute="centerX" secondItem="uen-tM-R16" secondAttribute="centerX" id="5gn-xz-GPL"/>
+                            <constraint firstItem="DHW-yH-o7o" firstAttribute="height" secondItem="uen-tM-R16" secondAttribute="height" multiplier="0.5" id="WpO-8e-ZNb"/>
+                            <constraint firstItem="DHW-yH-o7o" firstAttribute="centerY" secondItem="uen-tM-R16" secondAttribute="centerY" id="o7G-Jd-8Xz"/>
+                            <constraint firstItem="DHW-yH-o7o" firstAttribute="width" secondItem="uen-tM-R16" secondAttribute="width" multiplier="0.8" id="ykY-3L-42k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardStack" destination="DHW-yH-o7o" id="UYg-7o-eLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ct5-1B-2iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="198"/>
+        </scene>
+    </scenes>
+</document>
