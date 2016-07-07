@@ -116,7 +116,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             // show Callout (true/false)
             annotationView?.canShowCallout = true
         
-            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 37, 30))
+            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 32, 30))
             leftIconView.image = UIImage(named: "apple")
             annotationView?.leftCalloutAccessoryView = leftIconView
 //
