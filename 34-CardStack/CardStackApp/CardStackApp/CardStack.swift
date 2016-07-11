@@ -21,17 +21,18 @@ class CardStack : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clearColor()
-        seedDogs()
+        setupCards()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.backgroundColor = UIColor.clearColor()
-        seedDogs()
+        setupCards()
     }
     
-    func seedDogs() {
+    func setupCards() {
         
+        self.cards.removeAll()
         
         for i in 1...20 {
             let d = Dog()
@@ -150,6 +151,7 @@ class CardStack : UIView {
             let velocity = gesture.velocityInView(self)
             
             let percentBlock = {
+                
                 self.cards.removeAtIndex(self.cards.indexOf(card)!)
                 self.setupGestures()
                 card.removeGestureRecognizer(card.gestureRecognizers![0])

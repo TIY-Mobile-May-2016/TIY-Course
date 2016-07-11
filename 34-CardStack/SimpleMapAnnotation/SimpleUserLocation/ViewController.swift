@@ -56,7 +56,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             if let center = location?.coordinate {
                 let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
                 self.mapView.setRegion(region, animated: true)
-                self.mapView.showsUserLocation = true
+                self.mapView.showsUserLocation = false
                 
                 self.createAnnotation("Apple Computer", subTitle: "", coordinate: center)
                 print("mapView updated")
@@ -68,16 +68,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print(error.localizedDescription)
-    }
-    
-    func geoLocation(fullAddressString:String) {
-        
-        let geoCoder = CLGeocoder()
-        
-        geoCoder.geocodeAddressString(fullAddressString, completionHandler: { placemarks, error in
-        
-            
-            })
     }
     
     func createAnnotation(title: String, subTitle: String, coordinate: CLLocationCoordinate2D) {
@@ -116,12 +106,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             // show Callout (true/false)
             annotationView?.canShowCallout = true
         
-            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 32, 30))
+            let leftIconView = UIImageView(frame: CGRectMake(0, 0, 27, 30))
             leftIconView.image = UIImage(named: "apple")
             annotationView?.leftCalloutAccessoryView = leftIconView
-//
-//            // Automatically select the annotation
-//            self.mapView.selectAnnotation(annotation, animated: false)
+            
+            annotationView?.annotation = annotation
         }
         
         return annotationView

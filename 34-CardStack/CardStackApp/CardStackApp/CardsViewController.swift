@@ -14,9 +14,7 @@ class CardsViewController: UIViewController, CardStackDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.cardStack.delegate = self
-        
     }
     
     func cardInterested(dog: Dog) {
