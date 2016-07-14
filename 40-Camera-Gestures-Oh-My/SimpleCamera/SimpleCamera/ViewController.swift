@@ -18,11 +18,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         super.viewDidLoad()
 
+        // IMPORTANT
         self.imagePicker.delegate = self
     }
     
     @IBAction func chooseImage() {
         
+        // Call isSourceTypeAvailable
         if  UIImagePickerController.isSourceTypeAvailable(.Camera) {
             
             imagePicker.sourceType = .Camera
