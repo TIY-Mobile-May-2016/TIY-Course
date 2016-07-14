@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
 
     func tapDetected(sender: UITapGestureRecognizer) {
+        print("Double Tap")
         self.statusLabel.text = "Double Tap"
     }
     
