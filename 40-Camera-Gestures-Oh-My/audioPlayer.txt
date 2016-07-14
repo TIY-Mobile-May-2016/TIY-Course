@@ -1,0 +1,13 @@
+func setupAudioPlayerWithSong(theFilePath : NSURL ) -> AVAudioPlayer? {
+
+    var audioplayer : AVAudioPlayer?
+
+    do {
+        audioplayer = try AVAudioPlayer(contentsOfURL: filePath)
+        audioplayer?.volume = 1
+        audioplayer?.prepareToPlay()
+    } catch {
+        print("Something Went Wrong")
+    }
+    return audioplayer
+}
