@@ -9,12 +9,12 @@
 ### Topics
 
 Types of Gesture Recognizer
-	- UITapGestureRecognizer
-	- UIPinchGestureRecognizer
-	- UIRotationGestureRecognizer
-	- UISwipeGestureRecognizer
-	- UIPanGestureRecognizer
-	- UILongPressGestureRecognizer
+	* UITapGestureRecognizer
+	* UIPinchGestureRecognizer
+	* UIRotationGestureRecognizer
+	* UISwipeGestureRecognizer
+	* UIPanGestureRecognizer
+	* UILongPressGestureRecognizer
 
 UIGestureRecognizer States
 UIImagePickerController Review
