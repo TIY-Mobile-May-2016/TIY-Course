@@ -18,15 +18,16 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         self.fetchAll()
-        //self.addPerson("Phil")
-        //self.addPerson("Steve")
+    
+    }
+    
+    
+    @IBAction func addButtonTapped(sender: UIBarButtonItem) {
         
-//        self.addPerson("Joe")
-//        self.addPerson("Jason")
-//        self.addPerson("Taylor")
-//        self.addPerson("Chris")
+        self.addPerson("Phil")
         
-
+        self.fetchAll()
+        
     }
 
    
@@ -53,6 +54,8 @@ class ViewController: UITableViewController {
         }
     }
 
+    // Add Method to Save the Data
+    
     func addPerson(name: String) {
         
         let entity = NSEntityDescription.insertNewObjectForEntityForName("Person", inManagedObjectContext: moc) as! Person

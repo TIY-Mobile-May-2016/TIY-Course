@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E428E511D3C2C4300460499 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E428E4F1D3C2C4300460499 /* Person+CoreDataProperties.swift */; };
-		5E428E521D3C2C4300460499 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E428E501D3C2C4300460499 /* Person.swift */; };
+		5E30EDEC1D3D3F7500FCD896 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30EDEA1D3D3F7500FCD896 /* Person+CoreDataProperties.swift */; };
+		5E30EDED1D3D3F7500FCD896 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30EDEB1D3D3F7500FCD896 /* Person.swift */; };
 		5E54285B1C890E7500336D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54285A1C890E7500336D58 /* AppDelegate.swift */; };
 		5E54285D1C890E7500336D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54285C1C890E7500336D58 /* ViewController.swift */; };
 		5E5428601C890E7500336D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54285E1C890E7500336D58 /* Main.storyboard */; };
@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E428E4F1D3C2C4300460499 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		5E428E501D3C2C4300460499 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
+		5E30EDEA1D3D3F7500FCD896 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E30EDEB1D3D3F7500FCD896 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5E5428571C890E7500336D58 /* SimpleCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54285A1C890E7500336D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E54285C1C890E7500336D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E30EDE91D3D3C0B00FCD896 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E30EDEA1D3D3F7500FCD896 /* Person+CoreDataProperties.swift */,
+				5E30EDEB1D3D3F7500FCD896 /* Person.swift */,
+				5E54286C1C89121400336D58 /* myDataModel.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		5E54284E1C890E7500336D58 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +75,7 @@
 				5E54285A1C890E7500336D58 /* AppDelegate.swift */,
 				5E54285C1C890E7500336D58 /* ViewController.swift */,
 				5E54286F1C89135000336D58 /* DataController.swift */,
-				5E54286C1C89121400336D58 /* myDataModel.xcdatamodeld */,
-				5E428E4F1D3C2C4300460499 /* Person+CoreDataProperties.swift */,
-				5E428E501D3C2C4300460499 /* Person.swift */,
+				5E30EDE91D3D3C0B00FCD896 /* Model */,
 				5E54285E1C890E7500336D58 /* Main.storyboard */,
 				5E5428611C890E7500336D58 /* Assets.xcassets */,
 				5E5428631C890E7500336D58 /* LaunchScreen.storyboard */,
@@ -147,9 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E428E521D3C2C4300460499 /* Person.swift in Sources */,
+				5E30EDED1D3D3F7500FCD896 /* Person.swift in Sources */,
 				5E54286E1C89121400336D58 /* myDataModel.xcdatamodeld in Sources */,
-				5E428E511D3C2C4300460499 /* Person+CoreDataProperties.swift in Sources */,
+				5E30EDEC1D3D3F7500FCD896 /* Person+CoreDataProperties.swift in Sources */,
 				5E5428701C89135000336D58 /* DataController.swift in Sources */,
 				5E54285D1C890E7500336D58 /* ViewController.swift in Sources */,
 				5E54285B1C890E7500336D58 /* AppDelegate.swift in Sources */,
