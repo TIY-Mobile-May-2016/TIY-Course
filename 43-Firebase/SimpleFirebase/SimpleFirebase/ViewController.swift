@@ -20,10 +20,6 @@ class ViewController: UIViewController {
         let password = "12345678"
         
         self.signInUser(email, password: password)
-        
-        
-        
-        
     }
     
     func signInUser(email: String, password: String) {
@@ -33,6 +29,10 @@ class ViewController: UIViewController {
         FIRAuth.auth()?.signInWithEmail(email, password: password) {
             
             (user, error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            }
             
             if let user = user {
                 
@@ -51,6 +51,10 @@ class ViewController: UIViewController {
         
         FIRAuth.auth()?.createUserWithEmail(email, password: password) {
             (user, error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            }
             
             if let user = user {
                 
