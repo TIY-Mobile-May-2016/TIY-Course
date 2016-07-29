@@ -28,9 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! PhilsCollectionViewCell
         
-        let numberString = self.numbersArray[indexPath.row]
-        cell.nameLabel.text = numberString
-        
+        let imgString = self.numbersArray[indexPath.row]
         
         return cell
         
